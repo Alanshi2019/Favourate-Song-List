@@ -1,0 +1,143 @@
+body{
+    background: #d66d75; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d66d75, #e29587); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d66d75, #e29587); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#container{
+	width:360px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+.done{
+	color:grey;
+	text-decoration: line-through;
+}
+h1{
+	background-color:#d66d75;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	background-color: #fff;
+	height:40px;
+	line-height: 40px;
+	color: #666;
+}
+li:nth-child(2n){
+	background-color: #f7f7f7;
+}
+input{
+	float: left;
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 76%;
+	padding: 13px 0px 13px 20px;
+	box-sizing: border-box;
+	color:#d66d75;
+	border: 3px solid rgba(0,0,0,0);
+	line-height: 0px;
+	height: 55.5px;
+}
+input:focus{
+	background: #fff;
+	border: 3px solid #e29587;
+	outline: none;
+}
+
+.fade-enter {
+	opacity: 0;
+}
+.fade-enter-active{
+	opacity: 1;
+	transition: opacity 0.3s ease-in;
+}
+.fade-enter-done{
+	opacity: 1;
+}
+
+
+.fade-exit {
+	opacity: 1;
+}
+.fade-exit-active{
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+.fade-exit-done{
+	opacity: 0;
+}
+
+#listitem span{
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition:0.2s linear;
+	opacity:0;
+}
+
+#listitem li:hover span{
+	width: 40px;
+	opacity:1;
+}
+
+
+
+
+
+#transitiondiv{
+
+	height: 55.5px;
+	line-height: 55.5px;
+	
+}
+
+#transitiondiv span{
+	float:right;
+	background-color: #e74c3c;
+	display: inline-block;
+	color: white;
+	font-size: 1px;
+	width: 1px;
+	text-align: center;
+	transition:0.2s linear;
+	opacity: 0;
+}
+#transitiondiv:hover span{
+	background: #e29587;
+	opacity: 1;
+	width: 24%;
+	font-size: 20px;
+	margin-left: 0px;
+}
+#transitiondiv:hover input{
+	margin-right: 0px;
+}
+
+#transitiondiv:active span{
+	background: #d66d75;
+}
+
+/*#transitiondiv input:focus+#transitiondiv span{
+	border: 1px solid blue;
+	opacity: 1;
+}*/
+
+h1 #faplus{
+	float: right;
+}
